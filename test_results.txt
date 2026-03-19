@@ -1,0 +1,68 @@
+AGORA (ISO): 2026-03-12T00:42:50.615Z
+AGORA (SP): 11/03/2026, 21:42:50
+
+--- Testando: "me lembre de ligar para o João amanhã às 10h" ---
+Resultado Final: {
+  "intent": "reminder",
+  "summary": "Ligar para o João amanhã às 10h",
+  "data": {
+    "scheduledAt": "2026-03-12T13:00:00Z"
+  }
+}
+Intenção: reminder
+Sumário: Ligar para o João amanhã às 10h
+UTC Extracted: 2026-03-12T13:00:00Z
+Local (SP): 12/03/2026, 10:00:00
+
+--- Testando: "me avise da reunião próximo domingo" ---
+Resultado Final: {
+  "intent": "reminder",
+  "summary": "Reunião no próximo domingo",
+  "data": {
+    "scheduledAt": "2026-03-16T12:00:00Z"
+  }
+}
+Intenção: reminder
+Sumário: Reunião no próximo domingo
+UTC Extracted: 2026-03-16T12:00:00Z
+Local (SP): 16/03/2026, 09:00:00
+
+--- Testando: "academia às 15h" ---
+Resultado Final: {
+  "intent": "reminder",
+  "summary": "Lembrete de academia",
+  "data": {
+    "scheduledAt": "2026-03-11T18:00:00.000Z"
+  }
+}
+Intenção: reminder
+Sumário: Lembrete de academia
+UTC Extracted: 2026-03-11T18:00:00.000Z
+Local (SP): 11/03/2026, 15:00:00
+
+--- Testando: "Me lembre das datas do Concurso Câmara Goiânia: 15/03 Prova Objetiva, 20/04 Resultado" ---
+Resultado Final: {
+  "intent": "bulk_reminders",
+  "summary": "Lembretes das datas do Concurso Câmara Goiânia",
+  "data": {
+    "items": [
+      {
+        "description": "Prova Objetiva do Concurso Câmara Goiânia",
+        "scheduledAt": "2026-03-15T12:00:00Z"
+      },
+      {
+        "description": "Resultado do Concurso Câmara Goiânia",
+        "scheduledAt": "2026-04-20T12:00:00Z"
+      }
+    ]
+  }
+}
+Intenção: bulk_reminders
+Sumário: Lembretes das datas do Concurso Câmara Goiânia
+Itens (Bulk):
+1. Prova Objetiva do Concurso Câmara Goiânia
+   UTC: 2026-03-15T12:00:00Z
+   Local (SP): 15/03/2026, 09:00:00
+2. Resultado do Concurso Câmara Goiânia
+   UTC: 2026-04-20T12:00:00Z
+   Local (SP): 20/04/2026, 09:00:00

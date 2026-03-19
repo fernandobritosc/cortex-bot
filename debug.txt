@@ -1,0 +1,18 @@
+[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+C:\Users\uniao\OneDrive\Desktop\Ideias Dev\telegram_personal_assistant\src\index.ts:16
+  throw new Error('TELEGRAM_BOT_TOKEN is not defined in the environment.');
+        ^
+
+Error: TELEGRAM_BOT_TOKEN is not defined in the environment.
+    at fs (C:\Users\uniao\OneDrive\Desktop\Ideias Dev\telegram_personal_assistant\src\index.ts:16:9)
+    at Object.<anonymous> (C:\Users\uniao\OneDrive\Desktop\Ideias Dev\telegram_personal_assistant\src\index.ts:128:50)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object.transformer (C:\Users\uniao\OneDrive\Desktop\Ideias Dev\telegram_personal_assistant\node_modules\tsx\dist\register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at loadCJSModuleWithModuleLoad (node:internal/modules/esm/translators:339:3)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:242:7)
+
+Node.js v24.13.0
