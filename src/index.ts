@@ -55,9 +55,18 @@ bot.catch((err: any, ctx) => {
   ctx.reply('Desculpe, tive um erro interno ao processar isso.');
 });
 
+const PORT = process.env.PORT || 3000;
+
 bot.launch().then(() => {
-  logger.info('--- Cortex 2.0 Online ---');
+  logger.info(`--- Cortex 2.0 Online na porta ${PORT} ---`);
 });
+
+const http = require('http');
+const server = http.createServer((req: any, res: any) => {
+  res.writeHead(200);
+  res.end('Cortex Bot Running');
+});
+server.listen(PORT);
 
 // Tratamento de erros globais do Node
 process.on('uncaughtException', (err) => {
